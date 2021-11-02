@@ -20,6 +20,5 @@ func main() {
 }
 
 func getHome(c *gin.Context) {
-	data := service.GetAllArtists()
 	c.IndentedJSON(http.StatusOK, gin.H{"message": "Called successfully"})
 }
